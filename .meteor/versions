@@ -27,7 +27,7 @@ clinical:extended-api@2.2.3
 clinical:fonts@1.0.0
 clinical:glass-ui@1.3.10
 clinical:hl7-resource-datatypes@0.3.0
-clinical:hl7-resource-patient@0.1.6
+clinical:hl7-resource-patient@0.1.7
 clinical:hl7-resource-practitioner@1.1.2
 clinical:keybindings@1.2.6
 clinical:modals@1.0.7

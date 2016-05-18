@@ -90,8 +90,8 @@ ConformanceStatement = {
 };
 
 
-JsonRoutes.add("get", "metadata", function (req, res, next) {
-  console.log('GET /metadata');
+JsonRoutes.add("get", "fhir/metadata", function (req, res, next) {
+  console.log('GET /fhir/metadata');
 
   JsonRoutes.sendResult(res, {
     code: 200,

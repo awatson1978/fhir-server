@@ -20,8 +20,8 @@
 
 Template.sidebar.events({
   'click #statsLink': function(){
-    console.log('GET ' + Meteor.absoluteUrl() + "metadata");
-    HTTP.get(Meteor.absoluteUrl() + "metadata", function (error, result){
+    console.log('GET ' + Meteor.absoluteUrl() + "fhir/metadata");
+    HTTP.get(Meteor.absoluteUrl() + "fhir/metadata", function (error, result){
       Session.set("conformanceStatement", result.data);
     });
   },
