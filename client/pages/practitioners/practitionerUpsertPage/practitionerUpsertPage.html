@@ -1,0 +1,33 @@
+<template name="practitionerUpsertPage">
+  <div id="practitionerUpsertPage" style="{{getPageHeight}}">
+    {{> recordHeader type="record" url="practitioners" spreadsheet=false  imageGrid=false}}
+
+    <div id="practitionerUpsertCard" class="padded card-contents page" style="{{getOpacity}}">
+
+      <div id="practitionerMetaData">
+        <div id="practitionerMetaInputs">
+          <input id="practitionerNameInput" class="glass form-control" type="text" placeholder="practitionername" value="{{ getName }}" {{isReadOnly}}><br>
+          <input id="practitionerEmailInput"  class="glass form-control" type="text" placeholder="practitionername@somewhere.com" value="{{getEmailAddress}}" {{isReadOnly}}>
+          <!-- <input id="practitionerAvatarInput"  class="glass form-control" type="text" placeholder="http://www.widget.com/cog.jpg" value="{{profile.avatar}}" {{isReadOnly}}> -->
+        </div>
+        <img id="practitionerImage" src="{{profile.avatar}}" />
+      </div>
+      <textarea id="practitionerDescriptionInput"  class="glass form-control" rows="10" placeholder="Lorem ipsum dolar set et..." {{isReadOnly}}>{{profile.description}}</textarea><br>
+    </div>
+
+    <footer class="pageFooter">
+      <button id="saveUserButton">
+        <i class="fa fa-dot-circle-o"></i>
+        <i class="fa fa-dot-circle-o"></i>
+        <i class="fa fa-dot-circle-o"></i>
+      </button>
+      {{#if _id}}
+        <button id="removeUserButton">
+          <i class="fa fa-times"></i>
+          <i class="fa fa-times"></i>
+          <i class="fa fa-times"></i>
+        </button>
+      {{/if}}
+    </footer>
+  </div>
+</template>

@@ -13,7 +13,12 @@
         {{#if currentUser}}
           <a id="newOauthClientLink" href="/registerOuathClient" class="sidebarMenuItem withLowerBorder">Register Application</a>
           <a id="usersLink" href="/list/users" >User Directory</a>
-          <a id="usersLink" href="/list/patients" class="withLowerBorder" >Patient Directory</a>
+          <a id="usersLink" href="/list/patients" >Patient Directory</a>
+
+          <a id="practitionersLink" href="/list/practitioners" >Practitioner Directory</a>
+          <a id="locationsLink" href="/list/locations" >Location</a>
+          <a id="organizationsLink" href="/list/organizations" class="withLowerBorder" >Organizations</a>
+
           {{#if isSysadmin}}
             <a id="oauthAdminLink" href="/oauthAdmin" class="sidebarMenuItem">OAuth Admin</a>
             <a id="statsLink" href="/stats" class="sidebarMenuItem withLowerBorder">Statistics</a>

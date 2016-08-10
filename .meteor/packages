@@ -33,9 +33,13 @@ clinical:theming
 clinical:theming-ui
 clinical:fonts
 clinical:error-pages
-clinical:hl7-resource-datatypes@0.2.0
-clinical:hl7-resource-patient
 clinical:glass-ui
 clinical:roles
 clinical:accounts-housemd
 clinical:accounts-sysadmin
+
+clinical:hl7-resource-datatypes
+clinical:hl7-resource-patient
+clinical:hl7-resource-practitioner
+clinical:hl7-resource-location
+clinical:hl7-resource-organization

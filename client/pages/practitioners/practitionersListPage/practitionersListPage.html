@@ -1,0 +1,32 @@
+
+<template name="practitionersListPage">
+  <div id="practitionersListPage" class="page" style="{{getPageHeight}}">
+    {{> recordHeader url="practitioners" spreadsheet=false  imageGrid=false}}
+    <div class="horizontally-padded page" style="{{getOpacityWithCorner}}">
+      <input id="practitionerSearchInput" type="text" class="glass fullwidth form-control" placeholder="search..." value="{{getRecordSearchFilter}}" />
+      <ul id="practitionersUnorderedList">
+        {{#if hasNoContent}}
+          <li id="noResultsMessage" class="addRecordIcon">
+            <article class="noResultsMessage">
+              <span>There are no results!  Click to add one.</span>
+            </article>
+            <div class="fadeAway"></div>
+          </li>
+
+        {{else}}
+          {{#each practitionersList}}
+            <li class="practitionerItem">
+              <article>
+                <h2 class="fullNameText">{{name.text}}</h2>
+                <span class="pull-right barcode gray idText">{{_id}}</span><br>
+                <span class="descriptionText">{{ resourceType }}</span>
+              </article>
+              <div class="fadeAway"></div>
+            </li>
+          {{/each}}
+        {{/if}}
+      </ul>
+    </div>
+    {{> recordFooter }}
+  </div>
+</template>

@@ -1,0 +1,11 @@
+<template name="practitionerPreviewPage">
+  <div id="practitionerPreviewPage" class="fullheight padded page">
+    {{> recordHeader type="record" url="practitioners" spreadsheet=false  imageGrid=false}}
+      <div id="practitionerPreviewCard" class="card-contents" style="{{getOpacity}}">
+        <h2 id="practitionerfullNameText">{{profile.name}}</h2>
+        <p id="notesText">
+          {{description}}
+        </p>
+      </div>
+  </div>
+</template>
